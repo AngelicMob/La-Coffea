@@ -1,0 +1,164 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    line-height: 1.5;
+    font-family: arial;
+    font-weight: normal;
+  }
+
+
+.page-footer {
+    padding-top: 20px;
+    color: #fffff5;
+    background-color: #523429;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px/20px;
+  }
+
+
+  .footer {
+    padding-left: 0;
+    font-size: 1em;
+    display: block;
+  }
+
+
+  footer.page-footer .container {
+      text-align: center;
+    }
+
+
+    .white-text {
+    color: #fffff5
+  }
+
+  h5 {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 .656rem 0;
+}
+
+
+ul>li {
+    list-style-type: none;
+    display: list-item;
+    text-align: center;
+    margin: 5;
+  }
+ul {
+  margin: 5;
+  padding: 5;
+  padding-inline-start: 0px;
+}
+
+
+.grey-text.text-lighten-3 {
+    color: #eee
+  }
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #eee
+}
+
+.box {
+  width: 40%;
+  margin: 2px auto;
+
+  padding: 35px;
+
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fffff5;
+  border: 2px solid #fffff5;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #fff;
+  color: black
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fffff5;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #523429;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 33% 33% 33%
+}
+
+.share-links .share-facebook:before {
+    content: "";
+}
+.share-links a:before {
+    font-family: "FontAwesome";
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 23px;
+    height: 22px;
+    margin: auto;
+}

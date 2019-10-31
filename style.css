@@ -2,20 +2,24 @@
 
 body{
     margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Caviar Dreams';
     font-weight: 500;
     font-size: 1.1em;
-    
-    background-image: url(../nav2/img/a.jpg);
     background-repeat: no-repeat;
+    color: #fffff5;
+    background-image: url(../images/coffeeshop.jpg);
+    background-color:#fffff5; 
+    background-position: fixed;
+
+
 }
 
 a{
-    color: white;
+    color:#fffff5;
 }
 
 .header{
-    background-color: rgb(92, 31, 31);
+    background-color:#523429; 
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     opacity: 0.985;
 }
@@ -25,7 +29,7 @@ a{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color:rgb(7, 3, 3);
+    background-color: #523429;
     
 
 }
@@ -38,7 +42,8 @@ a{
 }
 
 .header ul a:hover{
-    background-color: rgba(253, 60, 60, .2);
+    background-color:#fffff5;
+    color: #523429;
     
 }
 
@@ -72,11 +77,11 @@ a{
     position: relative;
     float: right;
     cursor: pointer;
-    color: white;
+    color: #fffff5;
 }
 
 .header .menu-icon .nav-icon{
-    background: white;
+    background:#fffff5;
     display: block;
     height: 2px;
     width: 18px;
@@ -85,7 +90,7 @@ a{
 }
 
 .header .menu-icon .nav-icon:before{
-    background: white;
+    background: #fffff5;
     content: '';
     display: block;
     height: 100%;
@@ -95,7 +100,7 @@ a{
     top: 5px;    
 }
 .header .menu-icon .nav-icon:after{
-    background: white;
+    background: #fffff5;
     content: '';
     display: block;
     height: 100%;
@@ -126,4 +131,53 @@ a{
 .header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transform: rotate(45deg);
     top: 0;
+
 }
+/*
+.one {
+
+position: relative;
+background-color:  #fffff5;
+
+
+
+}
+
+.two {
+
+
+    
+}
+
+*/
+
+
+
+/*animation effect: 
+
+slide in:
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+*/
+
+
