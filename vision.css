@@ -23,7 +23,7 @@ body{
 
 
 
-/* Text på bilderna */
+/* Text */
 .grid > div {
     padding: 30px;
     border-radius: 6px;
@@ -40,11 +40,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-   
-   
+
 }
 
-/* Hover på bilderna*/
 
 .one:hover,
 .two:hover,
@@ -81,7 +79,6 @@ body{
     background-image: url(kaffe.jpg);
     background-size: cover;
     
-  
 
 }
 
@@ -115,6 +112,7 @@ p{
     background-color: black;
     opacity: 0.8;
     line-height: 2;
+    font-size: 0.8em;
    
 }
 
@@ -122,4 +120,5 @@ h1{
     display: inline; 
     background-color: black;
     opacity: 0.8;
+    font-size: 2em;
 }
