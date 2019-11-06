@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+    
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top:100px; 
+   
+    
+}
+
+
+
+/* Text på bilderna */
+.grid > div {
+    padding: 30px;
+    border-radius: 6px;
+    letter-spacing: 3px;
+    font-size: 1em;
+  
+    
+}
+
+
+.one {
+    background-image: url(kvalite2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+/* Hover på bilderna*/
+
+.one:hover,
+.two:hover,
+.three:hover{
+    opacity: 0.6;
+}
+
+.two{
+    background-image: url(miljo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.three{
+    background-image: url(ansvar3.jpg);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.text1{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 100px;
+    text-align: left;
+    background-image: url(kaffe.jpg);
+    background-size: cover;
+    
+  
+
+}
+
+
+.text2{
+    background: linear-gradient(rgb(119, 74, 74)
+    ,#BC8F8F);
+    margin-top: 100px;
+    text-align:left;
+
+}
+
+.text3{
+    background: linear-gradient(rgb(119, 74, 74)
+    ,#BC8F8F);
+    margin-bottom: 50px;
+    text-align:left;
+
+}
+
+.text4{
+    grid-column: 2/4;
+    margin-bottom:50px;
+    text-align:left;
+    background-image: url(beans-table.jpg);
+    background-size: cover;
+}
+
+p{
+    display: inline; 
+    background-color: black;
+    opacity: 0.8;
+    line-height: 2;
+   
+}
+
+h1{
+    display: inline; 
+    background-color: black;
+    opacity: 0.8;
+}
