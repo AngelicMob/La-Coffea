@@ -1,183 +1,288 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
 
-body{
+body, html{
     margin: 0;
-    font-family: 'Caviar Dreams';
-    font-weight: 500;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    line-height: 1.8em;
     font-size: 1.1em;
     background-repeat: no-repeat;
-    color: #fffff5;
-    background-image: url(../images/coffeeshop.jpg);
-    background-color:#fffff5; 
+    color: black;
     background-position: fixed;
 
-
 }
 
+
+
+/* Alexanders Part*/
 a{
-    color:#fffff5;
-}
-
-.header{
-    background-color:#523429; 
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    opacity: 0.985;
-}
-
-.header ul{
-    margin:0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #523429;
-    
-
-}
-
-.header ul a{
-    display: block;
-    padding: 20px;
     text-decoration: none;
+    color: white;
+    
+}
+li {
+    list-style-type: none;
+}
+header{
+    width: 100%;
+    height: 55px;
+    margin: auto;
+    background-color: rgba(19, 19, 19, 0.547);
     
 }
 
-.header ul a:hover{
-    background-color:#fffff5;
-    color: #523429;
-    
-}
 
-.header .logo{
+
+
+
+.brand{
     float: left;
-    display: block;
-    font-size: 2em;
-    padding: 10px 20px;
+    line-height: 50px;
+    color: white;
+    font-size: 2.6em;
+    
+    padding-left: 20px;
+    font-family: 'Engagement', cursive;
+    letter-spacing: 2px;
+    
 }
-
-
-.header .menu{
-    clear: both;
-    max-height: 0;
-    transition: max-height .3s ease-out;
-    text-align: center;
-}
-
-
-.header .menu-icon{
-    padding: 39px 5px 28px 20px;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
-
-.header .menuText{
-    font-weight: bold;
-    padding-top: 27px;
-    padding-right: 11px;
-    position: relative;
-    float: right;
-    cursor: pointer;
-    color: #fffff5;
-}
-
-.header .menu-icon .nav-icon{
-    background:#fffff5;
-    display: block;
-    height: 2px;
-    width: 18px;
-    position: relative;
-    transition: background .2s ease-out;
-}
-
-.header .menu-icon .nav-icon:before{
-    background: #fffff5;
-    content: '';
-    display: block;
-    height: 100%;
+nav{
     width: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    top: 5px;    
+    text-align: left;
+    font-size: 1.5em;
 }
-.header .menu-icon .nav-icon:after{
-    background: #fffff5;
-    content: '';
+nav a{
     display: block;
+    padding: 15px 0;
+    width: 100px;
+    margin-left: 132px;
+    
+}
+nav a:focus{
+    animation: zoomOut 1s ;
+}
+nav a:hover{
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    width: 90px;
+    transition:all 0.5s ease;
+}
+/*-------------------------*/
+.menu{
+    
+    right: -240px;
+    width: 280px;
     height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    top: -5px;
+    position: fixed;
+    background-color:transparent;
+    overflow: hidden;
+
+    margin-right: 20px;
+   /* transition: all .3s ease-in-out;*/
+ 
 }
 
-.header .menu-btn{
-    display: none;
+.menuIcon{
+    padding: 8px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    float: right;
+    
 }
-
-.header .menu-btn:checked ~ .menu{
-    max-height: 254px;
-
+#menuToggle{
+    display:none;
 }
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon{
-    background-color: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
-    transform: rotate(-45deg);
-    top:0;
-        
-}
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+/*lol
     transform: rotate(45deg);
-    top: 0;
+    transition: all .3s ease-in-out;
+*/
+#menuToggle:checked ~ .menu{
+    position: absolute;
+    right:0px;
+   
+    animation: slideInLeft 1s ;
+    
+}
+@keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+@keyframes zoomOut {
+    from {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    to {
+      opacity: 0;
+    }
+}
+
+
+
+
+.coffeeimg1, .coffeeimg2, .coffeeimg3, .coffeeimg4 {
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
-/*
-.one {
 
-position: relative;
-background-color:  #fffff5;
+.coffeeimg1 {
 
-
+    background-image: url(../images/coffee-mug.jpg);
+    min-height: 100%;
 
 }
 
-.two {
+.coffeeimg2 {
 
+    background-image: url(../images/coffee-bg.jpeg);
+    min-height: 400px;
+
+}
+.coffeeimg3 {
+
+    background-image: url(../images/faded-coffee.jpeg);
+    min-height: 400px;
+    
+}
+
+.coffeeimg4 {
+
+    background-image: url(../images/coffeeshop.jpg);
+    min-height: 100%;
 
     
 }
 
-*/
+.section {
 
 
+    text-align: center;
+    color: black;
+    padding:50px 80px;
+    
+    
 
-/*animation effect: 
+}
 
-slide in:
+.section-light {
 
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
+    background-color:#fffff5;
+    color:black;
+    box-sizing: border-box;
+
+}
+
+.section-dark {
+    
+    background-color:#fffff5;
+    color:black;
+
+}
+
+.section-black {
+    background-color:#fffff5;
+    color:black;
+}
+
+a {
+color: #fffff5;
+
 }
 
 
+/*Box1 for vårt Kaffe*/
+  .column1 {
+    
+    width: 50%;
+    padding: 10px;
+    
+  }
+  .column2 {
+    
+    width: 50%;
+    padding: 10px;
+    
+    
+  }
+
+  .row1:after {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    
+   
+   /*
+    content: "";
+    display: table;
+    clear: both;
+   */ 
+  }
+
+  
+  
+  .column3 {
+    
+    width: 50%;
+    padding: 10px;
+    
+  }
+  .column4 {
+    
+    width: 40%;
+    height: 50%;
+    float: right;
+    padding: 10px;
+    position: relative;
+    background-image: url(../images/coffeequote.jpeg)
+    
+    
+  }
+
+  .row2 {
+   
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse,
+
+    
+   
+   /*
+    content: "";
+    display: table;
+    clear: both;
+   */ 
+  }
+
+  .img {
+
+  height: 100px;
+  width: 100px;
 
 
-
-
-
-
-
-*/
-
-
+  }
